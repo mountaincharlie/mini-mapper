@@ -1,0 +1,19 @@
+# General
+.DS_Store
+
+# Node.js dependencies for React
+/react-frontend/node_modules
+/react-frontend/dist
+
+# Local environment variables for React
+/react-frontend/.env.local
+/react-frontend/.env.*.local
+
+# TypeScript cache for React
+/react-frontend/.tsbuildinfo
+
+# Rust build artifacts
+/rust-backend/target
+
+# Rust output binaries
+/rust-backend/*.rs.bk
