@@ -1,0 +1,45 @@
+@import '../../styles/variables.scss';
+
+.header{
+  width: 100%;
+  background-color: $secondary-color;
+  display: flex;
+  justify-content: space-between;
+
+  &-logo{
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: 40px;
+    color: white;
+    padding: 0.5rem 0 0.5rem 1.5rem;
+  }
+  &-pages{
+    display: flex;
+    align-items: center;
+
+    &-list{
+      font-family: $secondary-font;
+      list-style: none;
+      padding: 0;
+      display: flex;
+
+      li{
+        margin-right: 5rem;
+        font-size: 20px;
+
+        a{
+          color: white;
+          text-decoration: none;
+
+          &:hover{
+            color: $light-hover;
+          }
+        }
+      }
+    }
+  }
+}
+
+.active{
+  color: $light-hover !important;
+}

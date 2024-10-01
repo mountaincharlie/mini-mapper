@@ -1,0 +1,9 @@
+@import '../../styles/variables.scss';
+
+.form-page{
+
+  &-dropdowns{
+    display: flex;
+    justify-content: center;
+  }
+}

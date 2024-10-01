@@ -1,0 +1,30 @@
+@import '../../styles/variables.scss';
+
+.footer{
+  width: 100%;
+  background-color: $secondary-color;
+  // display: flex;
+  position: absolute;
+  bottom: 0;
+
+  &-links{
+    font-family: $secondary-font;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    
+    li{
+      margin-right: 5rem;
+      font-size: 20px;
+
+      a{
+        color: white;
+        text-decoration: none;
+
+        &:hover{
+          color: $light-hover;
+        }
+      }
+    }
+  }
+}

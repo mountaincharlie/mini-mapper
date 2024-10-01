@@ -1,0 +1,16 @@
+@import '../../styles/variables.scss';
+
+// required to target the leaflet MapContainer
+.leaflet-container {
+  // inherits from .map class
+  width: inherit;
+  height: inherit;
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 95vw;
+  height: 70vh;
+}
