@@ -1,9 +1,27 @@
 @import '../../styles/variables.scss';
 
 .form-page{
+  display:grid;
 
-  &-dropdowns{
+  &-inputs{
     display: flex;
     justify-content: center;
+  }
+
+  .react-datepicker-popper{
+    z-index: 1000;  // set it above the map
+  }
+
+  &-aoi-textarea{
+    display: flex;
+    justify-self: start;
+    margin-left: 2.5vw;
+    margin-top: 1.5vh;
+    width: 47.5vw;
+    height: 8vh;
+    border-radius:10px;
+    color:white;
+    background-color: $secondary-color;
+    padding: 8px;
   }
 }

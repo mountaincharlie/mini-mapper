@@ -18,7 +18,7 @@ const Dropdown: React.FC<DropdownProps> = ({ label, options, value, onChange }) 
     <div className="dropdown">
       <label>{label}</label>
       <select value={value} onChange={onChange}>
-        <option value="" disabled>Select {label}</option> {/* Placeholder */}
+        <option value="" disabled>Select {label} Type</option> {/* Placeholder */}
         {options.map((option) => (
           <option key={option.value} value={option.value}>
             {option.label}
