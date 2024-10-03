@@ -118,25 +118,26 @@ const FormPage: React.FC = () => {
           value={aoi ? JSON.stringify(aoi, null, 2) : 'Draw an AOI on the map using the tools in the top right corner'}
           readOnly
         />
-        {/* copy GeoJSON to clipboard - add disable class if no aoi*/}
-        <Button 
-          label="Copy JSON"
-          onClick= {handleSubmit}
-        />
-      </div>
+       
+        <div className="form-page-aoi-buttons-container">
+          {/* copy GeoJSON to clipboard - add disable class if no aoi*/}
+          <Button
+            label="Copy JSON"
+            onClick= {handleSubmit}
+          />
 
-      <div className="form-page-buttons-container">
-        {/* clear form */}
-        <Button 
-        label="Clear"
-        onClick= {handleClearForm}
-        />
-        
-        {/* submit */}
-        <Button 
-        label="Submit"
-        onClick= {handleSubmit}
-        />
+          {/* clear form */}
+          <Button 
+          label="Clear"
+          onClick= {handleClearForm}
+          />
+          
+          {/* submit */}
+          <Button 
+          label="Submit"
+          onClick= {handleSubmit}
+          />
+        </div>
       </div>
     </div>
   );
